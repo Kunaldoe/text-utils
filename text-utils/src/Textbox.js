@@ -53,6 +53,9 @@ const Textbox = (props) => {
           Total Words: {totalWords} and Total Characters: {totalCharacters}
         </p>
         <p>Minutes read: {(0.015 * totalWords).toFixed(2)} minutes</p>
+        <br/>
+        <h2>Preview of the above text:- </h2>
+        <p>{text}</p>
         
       </div>
     </>
