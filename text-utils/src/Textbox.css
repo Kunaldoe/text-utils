@@ -1,3 +1,6 @@
+.main{
+  background-color: aqua;
+}
 .htwo {
   display: flex;
   justify-content: center;

@@ -1,20 +1,60 @@
-ul {
+/* Navbar.css */
+.divnav {
+  margin: 0;
+  padding: 0;
+  background-color: #51b3c4;
+}
+
+.divnav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  
   display: flex;
+  /* justify-content: center; */
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
 }
 
-li a {
+.divnav li {
+  margin: 0 10px;
+}
+
+.divnav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 20px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-li a:hover {
+.divnav li a:hover {
+  background-color: #b4b4b4;
+}
+
+.active {
+  background-color: #517885;
+}
+
+.divnav.dark-mode {
+  background-color: #535a5d;
+}
+
+.dark-mode.divnav li a {
+  color: #fff;
+}
+
+.dark-mode .divnav li a:hover {
   background-color: #111;
+}
+.divnav ul.navbar-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.divnav ul.navbar-list li.toggle-mode-btn {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
